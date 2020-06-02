@@ -806,4 +806,10 @@
 #define D_SENSOR_BOILER_OT_RX   "OpenTherm RX"
 #define D_SENSOR_BOILER_OT_TX   "OpenTherm TX"
 
+//xdrv_40_shiftregistrer.ino
+#define D_SENSOR_SR_DATA "SR Data"
+#define D_SENSOR_SR_CLOCK "SR Clock"
+#define D_SENSOR_SR_LATCH "SR Latch" 
+#define D_SENSOR_SR_OE "SR OE"
+
 #endif  // _LANGUAGE_RO_RO_H_

@@ -233,6 +233,10 @@ enum UserSelectablePins {
   GPIO_BOILER_OT_RX,   // OpenTherm Boiler RX pin
   GPIO_BOILER_OT_TX,   // OpenTherm Boiler TX pin
   GPIO_WINDMETER_SPEED,  // WindMeter speed counter pin
+  GPIO_SR_DATA,        // shift register data
+  GPIO_SR_CLOCK,       // shift register clock
+  GPIO_SR_LATCH,       // shift register latch
+  GPIO_SR_OE,          // shift register output enable
   GPIO_SENSOR_END };
 
 // Programmer selectable GPIO functionality
@@ -322,7 +326,8 @@ const char kSensorNames[] PROGMEM =
   D_SENSOR_ELECTRIQ_MOODL "|"
   D_SENSOR_AS3935 "|" D_SENSOR_PMS5003_TX "|"
   D_SENSOR_BOILER_OT_RX "|" D_SENSOR_BOILER_OT_TX "|"
-  D_SENSOR_WINDMETER_SPEED
+  D_SENSOR_WINDMETER_SPEED "|"
+  D_SENSOR_SR_DATA "|" D_SENSOR_SR_CLOCK "|" D_SENSOR_SR_LATCH "|" D_SENSOR_SR_OE
   ;
 
 const char kSensorNamesFixed[] PROGMEM =
@@ -676,6 +681,12 @@ const uint8_t kGpioNiceList[] PROGMEM = {
 #endif
 #ifdef USE_AS3935
   GPIO_AS3935,
+#endif
+#ifdef USE_SR_74HC595
+  GPIO_SR_CLOCK,
+  GPIO_SR_DATA,
+  GPIO_SR_LATCH,
+  GPIO_SR_OE
 #endif
 };
 
