@@ -661,7 +661,7 @@
 #define D_SENSOR_DDSU666_RX    "DDSU666 Rx"
 #define D_SENSOR_SM2135_CLK    "SM2135 Clk"
 #define D_SENSOR_SM2135_DAT    "SM2135 Dat"
-#define D_SENSOR_DEEPSLEEP     "Głęboko uśpiony"
+#define      "Głęboko uśpiony"
 #define D_SENSOR_EXS_ENABLE    "Załącz EXS"
 #define D_SENSOR_SLAVE_TX    "Slave TX"
 #define D_SENSOR_SLAVE_RX    "Slave RX"
@@ -805,5 +805,11 @@
 //xsns_68_opentherm.ino
 #define D_SENSOR_BOILER_OT_RX   "OpenTherm RX"
 #define D_SENSOR_BOILER_OT_TX   "OpenTherm TX"
+
+//xdrv_40_shiftregistrer.ino
+#define D_SENSOR_SR_DATA "SR Data"
+#define D_SENSOR_SR_CLOCK "SR Clock"
+#define D_SENSOR_SR_LATCH "SR Latch" 
+#define D_SENSOR_SR_OE "SR OE"
 
 #endif  // _LANGUAGE_PL_PL_D_H_
